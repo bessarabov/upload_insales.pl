@@ -1,0 +1,30 @@
+= Script to upload themes to insales.ru =
+
+A small script to automate upload of changed themes to russian SaaS internet shop http://www.insales.ru/.
+Created for linux but in theory can run on mac and windows.
+
+== Author ==
+
+Ivan Bessarabov <ivan@bessarabov.ru>
+
+== Install for linux ==
+
+    $ cpan -i WWW::Mechanize
+    $ cp upload_insales.conf.sample upload_insales.conf 
+
+And edit configuration file upload_insales.conf.
+
+== Sample output ==
+
+    $ ./upload_insales.pl 
+    Please select site to upload:
+
+     [1] - http://moderno.myinsales.ru/
+     [2] - http://telescope.myinsales.ru/,
+
+    > 2
+    Uploading to 'http://telescope.myinsales.ru/'
+     * Zip created
+     * Logged in successfully
+     * Uploaded successfully
+    $ 

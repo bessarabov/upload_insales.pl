@@ -1,0 +1,12 @@
+$c = [
+            {
+                url => 'http://moderno.myinsales.ru/',
+                email => 'user@example.com',
+                password => 'top_secret'
+            },
+            {
+                url => 'http://telescope.myinsales.ru/',
+                email => 'webmaster@example.org',
+                password => 'sample_password'
+            },
+];
